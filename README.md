@@ -57,3 +57,6 @@ Deep Learning: TensorFlow, PyTorch, Keras
 Visualization: Matplotlib, Seaborn
 
 Database: PostgreSQL (for storing processed results)
+
+![image](https://github.com/user-attachments/assets/5fd7add6-1560-4aa4-a4a9-e5ccf6529b2f)
+
