@@ -1,62 +1,52 @@
-Sentiment Analysis of Corporate Reports using FinBERT
+# **Sentiment Analysis of Corporate Reports Using FinBERT**  
 
-Project Overview
+## **Project Overview**  
+This project focuses on sentiment analysis of corporate reports using **NLP, Machine Learning, and Deep Learning** techniques. The goal was to **fine-tune the FinBERT model** on the **Financial PhraseBank** dataset to classify financial texts as **positive, negative, or neutral**. The model was then **benchmarked** against other state-of-the-art NLP models.  
 
-This project focuses on sentiment analysis of corporate reports using NLP, Machine Learning, and Deep Learning techniques. The goal was to fine-tune the FinBERT model on the Financial PhraseBank dataset to classify financial texts as positive, negative, or neutral. The model was then benchmarked against other state-of-the-art NLP models.
+---  
 
-Working Process
+## **Working Process**  
 
-Data Preparation:
+### **1. Data Preparation**  
+- **Dataset:** Financial PhraseBank (primary source)  
+- **Preprocessing:**  
+  - Text cleaning and tokenization using **FinBERT’s tokenizer**  
+  - Sentiment labels assigned (**positive, negative, neutral**)  
 
-The Financial PhraseBank dataset was used as the primary source.
+### **2. Model Fine-Tuning**  
+- **FinBERT** (BERT model pre-trained on financial text) used for **transfer learning**  
+- Fine-tuned on **Financial PhraseBank dataset** using **TensorFlow**  
+- Dataset split into **training and test sets** for evaluation  
 
-Text data was cleaned and tokenized using FinBERT’s tokenizer.
+### **3. Training & Evaluation**  
+- Trained using **Adam optimizer** with **categorical cross-entropy loss**  
+- **Performance Metrics:**  
+  - **Accuracy:** 94%  
+  - **F1-score:** 0.88  
 
-Labels were assigned for sentiment classification.
+### **4. Benchmarking**  
+- Compared **FinBERT** with other NLP models: **LSM, ELMo, ULMFit**  
+- FinBERT **outperformed** other models with an **F1-score of 0.88**  
 
-Model Fine-Tuning:
+---  
 
-FinBERT, a BERT model pre-trained on financial text, was used for transfer learning.
+## **Dataset**  
+- **Financial PhraseBank:** Financial text labeled as **positive, negative, or neutral**  
+- Processed using **Pandas** and split into **train/test sets**  
 
-The model was fine-tuned on the Financial PhraseBank dataset using TensorFlow.
+---  
 
-The dataset was split into training and test sets for evaluation.
+## **Tools and Frameworks Used**  
 
-Training & Evaluation:
+### **Programming Language**  
+- **Python**  
 
-The model was trained using the Adam optimizer with categorical cross-entropy loss.
-
-Performance was evaluated using accuracy and F1-score.
-
-The fine-tuned model achieved 94% accuracy.
-
-Benchmarking:
-
-The performance of FinBERT was compared with other NLP models like LSM, ELMo, and ULMFit.
-
-FinBERT outperformed others, achieving an F1-score of 0.88.
-
-Dataset
-
-Financial PhraseBank: A dataset containing financial text labeled as positive, negative, or neutral.
-
-The dataset was processed using Pandas and split into train and test sets.
-
-Tools and Frameworks Used
-
-Programming Language: Python
-
-Libraries:
-
-NLP: Transformers (Hugging Face), NLTK, SpaCy, Gensim
-
-Machine Learning: Scikit-Learn, NumPy, Pandas
-
-Deep Learning: TensorFlow, PyTorch, Keras
-
-Visualization: Matplotlib, Seaborn
-
-Database: PostgreSQL (for storing processed results)
+### **Libraries**  
+- **NLP:** Transformers (Hugging Face), NLTK, SpaCy, Gensim  
+- **Machine Learning:** Scikit-Learn, NumPy, Pandas  
+- **Deep Learning:** TensorFlow, PyTorch, Keras  
+- **Visualization:** Matplotlib, Seaborn  
+- **Database:** PostgreSQL (for storing processed results)  
 
 ![image](https://github.com/user-attachments/assets/5fd7add6-1560-4aa4-a4a9-e5ccf6529b2f)
 
